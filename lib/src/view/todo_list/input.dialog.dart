@@ -46,6 +46,7 @@ Future<String?> displayTextInputDialog(BuildContext context) async {
                     onPressed: () {},
                     child: const Text('Dados invalidos'),
                   ),
+            const Spacer(),
             ElevatedButton(
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.red)),

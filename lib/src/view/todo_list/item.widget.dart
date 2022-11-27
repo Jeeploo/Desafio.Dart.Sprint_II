@@ -1,13 +1,13 @@
 import 'package:desafio_sprint_dois/src/controller/todo.controller.dart';
 import 'package:desafio_sprint_dois/src/model/todo.model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
+
 import 'package:get_it/get_it.dart';
 
 class ItemWidget extends StatefulWidget {
   final TodoModel item;
 
-  ItemWidget(this.item, {super.key});
+  const ItemWidget(this.item, {super.key});
 
   @override
   State<ItemWidget> createState() => _ItemWidgetState();
