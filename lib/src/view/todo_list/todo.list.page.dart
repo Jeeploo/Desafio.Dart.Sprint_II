@@ -7,7 +7,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
 class TodoListPage extends StatefulWidget {
-  TodoListPage({this.item, super.key});
+  const TodoListPage({this.item, super.key});
 
   final TodoModel? item;
 
@@ -35,7 +35,7 @@ class _TodoListPageState extends State<TodoListPage> {
           icon: const Icon(Icons.task),
           backgroundColor: Colors.black,
           label: const Text(
-            "N E W",
+            "N E W - T A S K",
             style: TextStyle(
                 color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
           ),
@@ -65,7 +65,6 @@ class _TodoListPageState extends State<TodoListPage> {
                 : ListView.builder(
                     itemCount: listcontroller.todoList.length,
                     itemBuilder: (context, index) {
-                      var item = listcontroller.todoList[index];
                       return ItemWidget(
                         listcontroller.todoList[index],
                       );

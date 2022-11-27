@@ -1,5 +1,3 @@
-import 'package:mobx/mobx.dart';
-
 class TodoModel {
   final String description;
   bool done;
