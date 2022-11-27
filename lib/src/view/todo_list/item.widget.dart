@@ -22,6 +22,7 @@ class _ItemWidgetState extends State<ItemWidget> {
       width: 200,
       child: ListTile(
         leading: Checkbox(
+          activeColor: Colors.black,
           value: widget.item.done,
           onChanged: (value) => setState(() {
             widget.item.done = !widget.item.done;
